@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="Packshoter manual" content="width=device-width, initial-scale=1">
+            <title>Packshoter manual</title>
+
+            <style>
+               body {
+                        background: #111111;
+                    }
+
+           .content {
+                        max-width: 1100px;
+                        margin: auto;
+                        background: #333333;
+                        padding: 0px;
+                    }
+
+               .rect{
+                        width: 95%;
+                        height: 80px;
+                        border:0px solid;
+                        margin:auto;
+                        background: #262626;
+                    }
+
+            .rectmin{
+                        width: 95%;
+                        height: 60px;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        margin-left: 2.5%;
+                        border:0px solid;
+                        background: #262626;
+                    }
+
+           .rectminy{
+                        width: 95%;
+                        height: 8px;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        margin-left: 2.5%;
+                        border:0px solid;
+                        background: #262626;
+                    }
+
+      .txt_cntr_mddl{
+                        color: #c8c8c8;
+                        font-family: ISOCPEUR;
+                        font-size: 3rem;
+                        text-align: center;
+                        line-height: 80px;
+                    }
+
+     .txt_cntr_mddls{
+                        color: #c8c8c8;
+                        font-family: ISOCPEUR;
+                        font-size: 2.5rem;
+                        text-align: center;
+                        line-height: 55px;
+                    }
+
+         .imgCenter {
+                        text-align: center;
+                    }
+
+           .txt_left{
+                        color: #c8c8c8;
+                        font-family: ISOCPEUR;
+                        font-size: 1.5rem;
+                        line-height: 12px;
+                        padding-left: 60px
+                    }
+
+                   p{
+                        font-family: ISOCPEUR;
+                        font-size: 1.5rem;
+                        color: #c8c8c8;
+                        padding-left: 100px
+                    }
+
+                span{
+                        font-family: ISOCPEUR;
+                        font-size: 1.5rem;
+                        color: #ffaa00;
+                    }
+
+           .imgright{
+                        float: right;
+                        margin-right: 30px;
+                        margin-top: -15px;
+                    }
+
+                      
+
+
+
+            </style>
+
+        </head>
+
+
+
+    <body>
+
+        <div class="content">
+
+        <h1><img src="img/logo.png" width="1100" ></h1>
+
+        <div class="rect txt_cntr_mddl">PACKSHOTER</div>
+
+        <h2 class="imgCenter"><img src="img/interface_a.png" width="450"  ></h2>
+
+        <div class="rectmin txt_cntr_mddls">Установка</div>
+
+
+
+        <p>Вариант 1 -Перетащить файл <span> Packshoter 3.30.mzp </span> во вьюпорт 3dsmax.</p>
+        <p>Вариант 2 - Top menu -> Scripting -> Run Script -> <span>Packshoter 3.30.mzp.</span></p>
+
+        <div class="rectmin txt_cntr_mddls">Начало работы</div>
+
+
+        <img src="img/start_warning.png" class="imgright">
+
+      
+
+        <p class="txt_left">Если при запуске появляется окно <span> WRONG SCENE NAME</span></p>
+        <p class="txt_left">необходимо проверить сцену и структуру папок.</p>
+
+
+        <p class="txt_left">Сцена должна полностью соответствовать базовому ТЗ!</p>
+        <p class="txt_left">При запуске скрипт проверяет правильность названия</p>
+        <p class="txt_left">базовой папки, сцены и соответствие названия объектов</p>
+        <p class="txt_left">названию сцены.</p>
+
+
+        <div class="rectminy"></div>
+
+
+
+        <img src="img/start.png" class="imgright">
+
+
+
+        <p class="txt_left"><span> CREATE SCENE </span> - создание новой сцены.</p>
+
+        <p class="txt_left"><span> FIX SCENE </span> - открывает ранее созданную сцену</p>
+        <p class="txt_left">для внесения в нее правок.</p>
+        <p class="txt_left">Если открываемая сцена не соответствует ТЗ</p>
+        <p class="txt_left">кнопка FIX SCENE будет неактивной</p>
+
+        <p class="txt_left"><span> ACCESSORYZATION </span> - добавление в сцену</p>
+        <p class="txt_left">на готовый объект готовых аксессессуаров из ZIP архивов упакованных по ТЗ.</p>
+        <p class="txt_left">не подходит для ручной аксессуаризации, при которой модели аксессуаров не упакованы по ТЗ,</p>
+        <p class="txt_left">  а перетаскиваются вручную из готовых сцен.</p>
+    
+        <div class="rectminy"></div>
+
+        <img src="img/check.png" class="imgright">
+
+        <p class="txt_left"> При запуске скрипт проверяет правильность названия сцены </p>
+        <p class="txt_left"> и соответствие названия объектов названию сцены.</p>
+        <p class="txt_left">  - Если названия соответствуют ТЗ - верхний <span>CHECK</span> будет зеленого цвета</p>
+        <p class="txt_left">  - Если названия строчными (маленькими) буквами (для случаев, когда </p>
+        <p class="txt_left">  на объекте используются Vray материалы) верхний check будет оранжевым</p>
+    
+        <p class="txt_left">  - Если скрипт выдает ошибки при запуске - проверяем сцену и названия. </p>
+
+        <div class="rectmin txt_cntr_mddls">Camera set</div>
+    
+
+        <p class="txt_left"> Выбранный сет камер (Camera Set) должен соответствовать  </p>
+        <p class="txt_left"> типу объекта в сцене. Если ни один из сетов не соответствует </p>
+        <p class="txt_left"> типу объекта выбираем тот, который позволит показать объект </p>
+        <p class="txt_left"> с самого выгодного ракурса </p>
+
+
+
+
+
+
+
+        <p class="txt_left">  </p>
+        <p class="txt_left">  </p>
+
+
+
+    </div>
+
+    </body>
+    </html>
