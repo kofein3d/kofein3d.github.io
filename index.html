@@ -11,14 +11,13 @@
                             font-family: ISOCPEUR; 
                             src: url(img/isocpeur.ttf); 
                         }
-  
                    body {
                             background: #111111;
                         }
                .content {
                             max-width: 1100px;
                             min-width: 1100px;
-                            min-height: 3300px;
+                            min-height: 4300px;
                             margin: auto;
                             background: #333333;
                             padding: 0px;
@@ -30,8 +29,6 @@
                             margin:auto;
                             background: #262626;
                         }
-
-
                 .rectbig{
                             width: 95%;
                             height: 400px;
@@ -39,8 +36,13 @@
                             margin:auto;
                             background: #333333;
                         }
-
-                        
+              .rectsmall{
+                            width: 95%;
+                            height: 40px;
+                            border:0px solid;
+                            margin:auto;
+                            background: #333333;
+                        }
                 .rectmin{
                             width: 95%;
                             height: 60px;
@@ -80,7 +82,7 @@
                             color: #c8c8c8;
                             font-family: ISOCPEUR;
                             font-size: 1.5rem;
-                            line-height: 12px;
+                            line-height: 36px;
                             padding-left: 60px
                         }
                        p{
@@ -125,28 +127,27 @@
 
         <h2 class="imgCenter"><img src="img/interface_a.png" width="450"  ></h2>
 
+
+
         <div class="rectmin txt_cntr_mddls">Установка</div>
-
-
 
         <p>Вариант 1 -Перетащить файл <span> Packshoter 3.30.mzp </span> во вьюпорт 3dsmax.</p>
         <p>Вариант 2 - Top menu -> Scripting -> Run Script -> <span>Packshoter 3.30.mzp.</span></p>
 
-        <div class="rectmin txt_cntr_mddls">Начало работы</div>
 
+
+        <div class="rectmin txt_cntr_mddls">Начало работы</div>
 
         <img src="img/start_warning.png" class="imgright">
 
-      
+        <p class="txt_left">Если при запуске появляется окно <span> WRONG SCENE NAME</span><br />
+            необходимо проверить сцену и структуру папок.<br />
+            Сцена должна полностью соответствовать базовому ТЗ!<br />
+            При запуске скрипт проверяет правильность названия<br />
+            базовой папки, сцены и соответствие названия объектов<br />
+            названию сцены.
+        </p>    
 
-        <p class="txt_left">Если при запуске появляется окно <span> WRONG SCENE NAME</span></p>
-        <p class="txt_left">необходимо проверить сцену и структуру папок.</p>
-
-
-        <p class="txt_left">Сцена должна полностью соответствовать базовому ТЗ!</p>
-        <p class="txt_left">При запуске скрипт проверяет правильность названия</p>
-        <p class="txt_left">базовой папки, сцены и соответствие названия объектов</p>
-        <p class="txt_left">названию сцены.</p>
 
 
         <div class="rectminy"></div>
@@ -155,45 +156,144 @@
 
         <img src="img/start.png" class="imgright">
 
+        <p class="txt_left"><span> CREATE SCENE </span> - создание новой сцены.<br />
+            <span> FIX SCENE </span> - открывает ранее созданную сцену<br />
+            для внесения в нее правок.<br />
+            Если открываемая сцена не соответствует ТЗ<br />
+            кнопка FIX SCENE будет неактивной<br />
+            <span> ACCESSORYZATION </span> - добавление в сцену<br />
+            на готовый объект готовых аксессессуаров из ZIP архивов упакованных по ТЗ.<br />
+            Не подходит для ручной аксессуаризации, при которой модели аксессуаров <br />
+            не упакованы по ТЗ, а перетаскиваются вручную из готовых сцен.
+        </p>
 
 
-        <p class="txt_left"><span> CREATE SCENE </span> - создание новой сцены.</p>
 
-        <p class="txt_left"><span> FIX SCENE </span> - открывает ранее созданную сцену</p>
-        <p class="txt_left">для внесения в нее правок.</p>
-        <p class="txt_left">Если открываемая сцена не соответствует ТЗ</p>
-        <p class="txt_left">кнопка FIX SCENE будет неактивной</p>
-
-        <p class="txt_left"><span> ACCESSORYZATION </span> - добавление в сцену</p>
-        <p class="txt_left">на готовый объект готовых аксессессуаров из ZIP архивов упакованных по ТЗ.</p>
-        <p class="txt_left">Не подходит для ручной аксессуаризации, при которой модели аксессуаров </p>
-        <p class="txt_left">  не упакованы по ТЗ, а перетаскиваются вручную из готовых сцен.</p>
-    
         <div class="rectminy"></div>
+
+
 
         <img src="img/check.png" class="imgright">
 
-        <p class="txt_left"> &nbsp При запуске скрипт проверяет правильность названия сцены </p>
-        <p class="txt_left"> &nbsp и соответствие названия объектов названию сцены.</p>
-        <p class="txt_left">  - Если названия соответствуют ТЗ - верхний <span>CHECK</span> будет зеленым</p>
-        <p class="txt_left">  - Если названия строчными (маленькими) буквами (для случаев,  </p>
-        <p class="txt_left">   &nbsp когда на объекте используются Vray материалы) верхний check</p>
-        <p class="txt_left">   &nbsp будет оранжевым</p>
-        <p class="txt_left">  - Если скрипт выдает ошибки при запуске - проверяем сцену и названия. </p>
+        <p class="txt_left">   &nbsp При запуске скрипт проверяет правильность названия сцены <br />
+              &nbsp и соответствие названия объектов названию сцены. <br />
+            - Если названия соответствуют ТЗ - верхний <span>CHECK</span> будет зеленым <br />
+            - Если названия строчными (маленькими) буквами (для случаев, <br />
+              &nbsp когда на объекте используются Vray материалы) верхний check <br />
+              &nbsp будет оранжевым <br />
+            - Если скрипт выдает ошибки при запуске - проверяем сцену и названия. 
+        </p>
+
+
+
 
         <div class="rectmin txt_cntr_mddls">Camera set</div>
-    
         <img src="img/camset.png" width="200" class="imgright">
 
-        <p class="txt_left"> Выбранный сет камер (Camera Set) должен соответствовать  </p>
-        <p class="txt_left"> типу объекта в сцене. Если ни один из сетов не соответствует </p>
-        <p class="txt_left"> типу объекта выбираем тот, который позволит показать объект </p>
-        <p class="txt_left"> с самого выгодного ракурса </p>
+        <p class="txt_left"> Выбранный сет камер (Camera Set) должен соответствовать  <br />
+            типу объекта в сцене. Если ни один из сетов не соответствует <br />
+            типу объекта выбираем тот, который позволит показать объект <br />
+            с самого выгодного ракурса 
+        </p>
 
         <div class="rectbig"></div>
 
 
-        <div class="rectmin txt_cntr_mddls">Light set</div>
+
+        <div class="rectmin txt_cntr_mddls">Light Set</div>
+        <img src="img\lightset.png"   class="imgright">
+
+        <p class="txt_left"> 
+            Сцена должна быть освещена одним из наборов источников света.<br />
+            <span>По-умолчанию</span> использутся <span>“Dome Light”</span> для напольных изделий, <br />
+            <span>“Wall Light”</span> для настенных изделий и <span>“Ceiling Light”</span> для потолочных <br />
+             (светильники, люстры и т.п.) <br />
+            Все остальные наборы используются после согласования <br />
+            с менеджером проекта.
+            <br />
+            <br />
+            <span>HDRI</span> сет состоит из 6 пунктов, по-умолчанию используется <span>HDRI_1</span>.<br />
+
+            Ползунок врещения HDRI выставлен по-умолчанию. <br />
+            (подменю раскрывается после нажатия кнопки "HDRI")
+
+        </p>
+
+        <img src="img/hdrisel.png" style="position: relative; left: 50px;"  >
+
+        <br />
+
+
+        <div class="rectmin txt_cntr_mddls">Lights rotate</div>
+        <p class="txt_left"> Вращение всего выбранного сета освещения вокруг изделия
+            позволяет более точно настроить  <br /> угол падения света от всей группы источников.
+            (Аналогично в подменю HDRI)
+        </p>
+
+        <img src="img/lightrot.png" style="position: relative; left: 50px;"  >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="rectmin txt_cntr_mddls">Export FBX</div>
+        <img src="img\export_fbx.png"   class="imgright">
+
+        <p class="txt_left"> Промежуточный экспорт FBX для запекания AO <br />
+            Не является финальным экспортом <br />
+            Финальный экспорт осуществляется автоматически <br />
+            После проверки сцены перед архивацией.
+        </p>
+
+
+
+        <div class="rectmin txt_cntr_mddls">Flip Light</div>
+        <img src="img\flip.png"   class="imgright">
+
+        <p class="txt_left"> Отзеркаливание выбранного сета освещения слева направо и наоборот  </p>
+        <br />
+
+
+
+        <div class="rectmin txt_cntr_mddls">Camcor & Camsel</div>
+        <img src="img\camcor.png"   class="imgright">
+
+        <p class="txt_left"> <span>Camcor</span> - применяет ко всем камерам модификатор "Camera correction"  </p>
+        <p class="txt_left"> <span>Camsel</span> - Выделяет все камеры в сцене для дальнейших манипуляций  </p>
+   
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+        <p style="position: relative; left: 340px;"> <span>(Продолжение следует...)</span>  </p>
+        <br />
+
+
+
+
+
+
 
 
 
